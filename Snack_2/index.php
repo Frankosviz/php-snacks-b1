@@ -1,13 +1,23 @@
 <?php
-    $name = $_GET['name'];
-    $email = $_GET['email'];
-    $age = $_GET['age'];
+    $yourName = $_GET['yourName'];
+    $yourEmail = $_GET['yourEmail'];
+    $yourAge = $_GET['yourAge'];
 
-    if (strlen($name) > 3 && strpos($email, '@') && strpos($email, '.') && is_numeric($age)) {
-        echo 'Accesso riuscito';
+    if(isset($_GET['yourname']) && isset($_GET['youremail']) && isset($_GET['yourage'])) {
+        $yourName = $_GET['yourName'];
+        $yourEmail = $_GET['yourEmail'];
+        $yourAge = $_GET['yourAge'];
     } else {
-        echo 'Accesso negato';
+        $yourName = 'Inserisci il tuo nome';
+        $yourEmail = 'Inserisci la tua email';
+        $yourAge = 'Inserisci la tua età';
     }
+
+    // if (strlen($name) > 3 && strpos($email, '@') && strpos($email, '.') && is_numeric($age)) {
+    //     echo 'Accesso riuscito';
+    // } else {
+    //     echo 'Accesso negato';
+    // }
 ?>
 
 <!DOCTYPE html>
@@ -36,18 +46,22 @@ Con un form passare come parametri GET name, mail e age e verificare (cercando i
         <form action="index.php" method="GET" class="fs-5 text-center d-flex align-items-center justify-content-center gap-3">
             <div>
                 <h4 class="text-center text-primary">Inserisci il tuo nome</h4>
-            <input type="text" name="name">
+            <input type="text" name="yourName">
             </div>
             <div>
             <h4 class="text-center text-primary">Inserisci la tua email</h4>
-            <input type="email" name="mail" id="mail">
+            <input type="email" name="yourEmail">
             </div>
             <div>
             <h4 class="text-center text-primary">Inserisci la tua età</h4>
-            <input type="number" name="age" id="age">
+            <input type="number" name="yourAge">
             </div>
-
+            <div class="container d-flex align-items-center justify-content-center">
+            <button type="submit" class="btn btn-primary">Invia</button>
+            </div>
         </form>
+        
+        
     </div>
 
 </body>
