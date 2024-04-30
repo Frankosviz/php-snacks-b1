@@ -7,7 +7,7 @@ $arrayMatches = [
         'teamAwayScore' => '1',
     ],
     [
-        'teamHome' => 'Geona',
+        'teamHome' => 'Genoa',
         'teamAway' => 'Sampdoria',
         'teamHomeScore' => '3',
         'teamAwayScore' => '0',
@@ -35,15 +35,89 @@ $arrayMatches = [
         'teamAway' => 'Juventus',
         'teamHomeScore' => '3',
         'teamAwayScore' => '2',
+    ],
+    [
+        'teamHome' => 'Lecce',
+        'teamAway' => 'Ascoli',
+        'teamHomeScore' => '3',
+        'teamAwayScore' => '0',
+    ],
+    [
+        'teamHome' => 'Pordenone',
+        'teamAway' => 'Brescia',
+        'teamHomeScore' => '2',
+        'teamAwayScore' => '2',
+    ],
+    [
+        'teamHome' => 'Benevento',
+        'teamAway' => 'Palermo',
+        'teamHomeScore' => '1',
+        'teamAwayScore' => '1',
+    ],
+    [
+        'teamHome' => 'Cremonese',
+        'teamAway' => 'Airola',
+        'teamHomeScore' => '3',
+        'teamAwayScore' => '0',
+    ],
+    [
+        'teamHome' => 'Inter',
+        'teamAway' => 'Torino',
+        'teamHomeScore' => '2',
+        'teamAwayScore' => '2',
+    ],
+    [
+        'teamHome' => 'Benevento',
+        'teamAway' => 'Palermo',
+        'teamHomeScore' => '1',
+        'teamAwayScore' => '1',
+    ],
+    [
+        'teamHome' => 'Sassuolo',
+        'teamAway' => 'Cesena',
+        'teamHomeScore' => '3',
+        'teamAwayScore' => '0',
+    ],
+    [
+        'teamHome' => 'Atalanta',
+        'teamAway' => 'Juventus',
+        'teamHomeScore' => '3',
+        'teamAwayScore' => '2',
+    ],
+    [
+        'teamHome' => 'Lecce',
+        'teamAway' => 'Ascoli',
+        'teamHomeScore' => '3',
+        'teamAwayScore' => '0',
+    ],
+    [
+        'teamHome' => 'Pordenone',
+        'teamAway' => 'Brescia',
+        'teamHomeScore' => '2',
+        'teamAwayScore' => '2',
+    ],
+    [
+        'teamHome' => 'Benevento',
+        'teamAway' => 'Palermo',
+        'teamHomeScore' => '1',
+        'teamAwayScore' => '1',
+    ],
+    [
+        'teamHome' => 'Cremonese',
+        'teamAway' => 'Airola',
+        'teamHomeScore' => '3',
+        'teamAwayScore' => '0',
     ]
-    ];
+];
 
-    for ($i = 0; $i < count($arrayMatches); $i++) {
-        $teamHome = $arrayMatches[$i]['teamHome'];
-        $teamAway = $arrayMatches[$i]['teamAway'];
-        $teamHomeScore = $arrayMatches[$i]['teamHomeScore'];
-        $teamAwayScore = $arrayMatches[$i]['teamAwayScore'];
-    }
+// for ($i = 0; $i < count($arrayMatches); $i++) {
+//     $teamHome = $arrayMatches[$i]['teamHome'];
+//     $teamAway = $arrayMatches[$i]['teamAway'];
+//     $teamHomeScore = $arrayMatches[$i]['teamHomeScore'];
+//     $teamAwayScore = $arrayMatches[$i]['teamAwayScore'];
+
+//     echo $teamHome . ' - ' . $teamAway . ' | ' . $teamHomeScore . '-' . $teamAwayScore . '<br>';
+// }
 
 
 // proseguire con ciclo for stasera
@@ -76,8 +150,21 @@ Olimpia Milano - Cantù | 55-60 -->
 
 
 <body>
-    <div class="container f-d-tab fs-5 text-center d-flex align-items-center justify-content-center">
-        <?php var_dump($arrayMatches); ?>
+    <div class="container f-d-tab  text-center d-flex align-items-center justify-content-center">
+        <?php
+        for ($i = 0; $i < count($arrayMatches); $i++) {
+            $teamHome = $arrayMatches[$i]['teamHome'];
+            $teamAway = $arrayMatches[$i]['teamAway'];
+            $teamHomeScore = $arrayMatches[$i]['teamHomeScore'];
+            $teamAwayScore = $arrayMatches[$i]['teamAwayScore']; ?>
+            <div class="container fs-1 d-flex flex-column align-items-center justify-content-center">
+                <?php
+                echo $teamHome . ' - ' . $teamAway . ' | ' . $teamHomeScore . '-' . $teamAwayScore . '<br>';
+        }
+        ?>
+        </div>
     </div>
 
 </body>
+
+</html>
