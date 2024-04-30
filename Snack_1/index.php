@@ -1,40 +1,50 @@
 <?php
-$firstMatch = [
-    'teamHome' => 'Napoli',
-    'teamAway' => 'Milan',
-    'teamHomeScore' => '4',
-    'teamAwayScore' => '1',
-];
-$secondMatch = [
-    'teamHome' => 'Geona',
-    'teamAway' => 'Sampdoria',
-    'teamHomeScore' => '3',
-    'teamAwayScore' => '0',
-];
-$thirdMatch = [
-    'teamHome' => 'Inter',
-    'teamAway' => 'Torino',
-    'teamHomeScore' => '2',
-    'teamAwayScore' => '2',
-];
-$fourthMatch = [
-    'teamHome' => 'Benevento',
-    'teamAway' => 'Palermo',
-    'teamHomeScore' => '1',
-    'teamAwayScore' => '1',
-];
-$fifthMatch = [
-    'teamHome' => 'Sassuolo',
-    'teamAway' => 'Cesena',
-    'teamHomeScore' => '3',
-    'teamAwayScore' => '0',
-];
-$sixthMatch = [
-    'teamHome' => 'Atalanta',
-    'teamAway' => 'Juventus',
-    'teamHomeScore' => '3',
-    'teamAwayScore' => '2',
-];
+$arrayMatches = [
+    [
+        'teamHome' => 'Napoli',
+        'teamAway' => 'Milan',
+        'teamHomeScore' => '4',
+        'teamAwayScore' => '1',
+    ],
+    [
+        'teamHome' => 'Geona',
+        'teamAway' => 'Sampdoria',
+        'teamHomeScore' => '3',
+        'teamAwayScore' => '0',
+    ],
+    [
+        'teamHome' => 'Inter',
+        'teamAway' => 'Torino',
+        'teamHomeScore' => '2',
+        'teamAwayScore' => '2',
+    ],
+    [
+        'teamHome' => 'Benevento',
+        'teamAway' => 'Palermo',
+        'teamHomeScore' => '1',
+        'teamAwayScore' => '1',
+    ],
+    [
+        'teamHome' => 'Sassuolo',
+        'teamAway' => 'Cesena',
+        'teamHomeScore' => '3',
+        'teamAwayScore' => '0',
+    ],
+    [
+        'teamHome' => 'Atalanta',
+        'teamAway' => 'Juventus',
+        'teamHomeScore' => '3',
+        'teamAwayScore' => '2',
+    ]
+    ];
+
+    for ($i = 0; $i < count($arrayMatches); $i++) {
+        $teamHome = $arrayMatches[$i]['teamHome'];
+        $teamAway = $arrayMatches[$i]['teamAway'];
+        $teamHomeScore = $arrayMatches[$i]['teamHomeScore'];
+        $teamAwayScore = $arrayMatches[$i]['teamAwayScore'];
+    }
+
 
 // proseguire con ciclo for stasera
 
@@ -66,29 +76,8 @@ Olimpia Milano - Cantù | 55-60 -->
 
 
 <body>
-    <div class="container f-d-tab fs-5">
-        <div>
-            <p>
-                <?php echo $firstMatch['teamHome']
-
-                    ?>
-            </p>
-            <p>
-                <?php echo $firstMatch['teamHomeScore'] 
-                
-                ?>
-            </p>
-        </div>
-        <div>
-            <p>
-                <?php echo $firstMatch['teamAway']
-
-                    ?>
-            </p>
-            <p>
-                <?php echo $firstMatch['teamAwayScore'] ?>
-            </p>
-        </div>
+    <div class="container f-d-tab fs-5 text-center d-flex align-items-center justify-content-center">
+        <?php var_dump($arrayMatches); ?>
     </div>
 
 </body>
