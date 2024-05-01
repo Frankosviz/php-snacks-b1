@@ -2,18 +2,24 @@
     $casualNumbers = [];
 
     for ($i = 0; $i < 15; $i++){
-        $numbers = rand(1, 1000);
+        $numbers = rand(1, 50);
         // var_dump($numbers);
 
+        // Verifico che il numero generato non sia già presente nell'array
+        if (!in_array($numbers, $casualNumbers)) {
+            
         // Utilizziamo array_push per pushare numeri all'array inizialmente vuoto oppure possiamo utilizzare la notazione degli array '[]' che è più comune e leggibile 
         //$casualNumbers[] = $number;
         
         array_push($casualNumbers, $numbers);
-        // var_dump($casualNumbers);
+        } else {
+
+            // Se il numero è già presente, decremento $i per ripetere il ciclo e generare un nuovo numero
+            $i--;
+        }
     }
 
-    if (count($numbers))  (count($numbers))
-    
+    var_dump($casualNumbers);
 
      
 ?>
