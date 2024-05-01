@@ -1,4 +1,4 @@
-<?php 
+<?php
 
 $yourName = $_GET['yourName'];
 $yourEmail = $_GET['yourEmail'];
@@ -32,7 +32,7 @@ $deniedMessage = 'Accesso negato';
 
 <body>
     <div class="container text-center">
-        <?php 
+        <?php
         if ($yourName > 3 && strpos($yourEmail, '@') && strpos($yourEmail, '.') && is_numeric($yourAge)) {
             echo "<h4 class='text-success'> Complimenti $yourName hai inserito tutti i dati correttamente!</h4>
             <h1 class='text-primary'>$accessMessage </h1>";
@@ -43,8 +43,8 @@ $deniedMessage = 'Accesso negato';
             <p class='text-gray text-decoration-underline text-center'>Numero verde <strong>9383922893823</strong></p>";
         }
         ?>
-        
-        
+
+
     </div>
 </body>
 

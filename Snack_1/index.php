@@ -150,6 +150,7 @@ Olimpia Milano - Cantù | 55-60 -->
 
 
 <body>
+    <h1 class="text-center text-primary text-uppercase border-bottom">Snack 1 - Boolean</h1>
     <div class="container f-d-tab  text-center d-flex align-items-center justify-content-center">
         <?php
         for ($i = 0; $i < count($arrayMatches); $i++) {

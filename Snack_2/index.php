@@ -39,8 +39,10 @@
 Con un form passare come parametri GET name, mail e age e verificare (cercando i metodi che non conosciamo nella documentazione) che name sia più lungo di 3 caratteri, che mail contenga un punto e una chiocciola e che age sia un numero. Se tutto è ok stampare “Accesso riuscito”, altrimenti “Accesso negato” -->
 
 <body>
+    <h1 class="text-center text-primary text-uppercase border-bottom">Snack 2 -  Boolean</h1>
 
     <div class="container fs-5 text-center d-flex align-items-center justify-content-center gap-3">
+
         <form action="updatedPage.php" method="GET">
 
             <h4 class="text-center text-primary">Inserisci il tuo nome</h4>
