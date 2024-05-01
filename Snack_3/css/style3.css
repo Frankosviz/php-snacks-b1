@@ -1,0 +1,12 @@
+.f-d-card {
+    width: 300px;
+    height: 500px;
+    border: 1px solid black;
+}
+
+.f-d-card-border {
+    border: 1px solid black;
+    border-radius: 5px;
+    border-top: none;
+    background-color: rgb(225, 225, 243);
+}
