@@ -1,0 +1,13 @@
+.f-d-container {
+    max-width: 1800px;
+    margin: 30px 30px;
+    display: flex;
+    flex-direction: column;  
+}
+
+.f-d-size {
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: underline;
+    margin-top: 30px;
+}
