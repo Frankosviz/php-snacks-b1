@@ -1,5 +1,21 @@
 <?php 
+    $casualNumbers = [];
 
+    for ($i = 0; $i < 15; $i++){
+        $numbers = rand(1, 1000);
+        // var_dump($numbers);
+
+        // Utilizziamo array_push per pushare numeri all'array inizialmente vuoto oppure possiamo utilizzare la notazione degli array '[]' che è più comune e leggibile 
+        //$casualNumbers[] = $number;
+        
+        array_push($casualNumbers, $numbers);
+        // var_dump($casualNumbers);
+    }
+
+    if (count($numbers))  (count($numbers))
+    
+
+     
 ?>
 
 <!DOCTYPE html>
@@ -21,3 +37,7 @@
 
 <!-- Snack 4
 Creare un array con 15 numeri casuali, tenendo conto che l’array non dovrà contenere lo stesso numero più di una volta -->
+
+ <!-- Creo un array vuoto all'interno del quale andrò ad inserire i numeri random
+ I numeri random li ottengo da un ciclo for
+ Con un if vado a controllare che non ci siano numeri uguali nel mio array -->
