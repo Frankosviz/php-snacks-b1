@@ -1,5 +1,5 @@
 <?php
-$paragraph = 'Buonasera a tutti. Oggi è il primo Maggio ed ho studiato tutto il giorno. Sto contando indici da tempo. Questa è una pazzia. Ciao. La grafica lascerà un po a desiderare. Tutto questo è voluto.';
+$paragraph = 'Buonasera a tutti. Oggi è il primo Maggio ed ho studiato tutto il giorno. Sto contando indici da tempo. Questa è una pazzia. Ciao. La grafica lascerà un po a desiderare. Tutto questo è voluto. ';
 // Con substr trova le parole nel paragrafo tramite il conto degli indici
 // $firstSection = substr($paragraph, 0, 18);
 // $secondSection = substr($paragraph, 18, 56);
@@ -9,25 +9,36 @@ $paragraph = 'Buonasera a tutti. Oggi è il primo Maggio ed ho studiato tutto il
 // $sixthSection = substr($paragraph, 132, 40);
 // $seventhSection = substr($paragraph, 172, 25);
 
+$smallText = explode(". ", $paragraph);
+//  var_dump($smallText);
+
+$firstSection = $smallText[0];
+$secondSection = $smallText[1];
+$thirdSection = $smallText[2];
+$fourthSection = $smallText[3];
+$fifthSection = $smallText[4];
+$sixthSection = $smallText[5];
+$seventhSection = $smallText[6];
+
 // var_dump($firstSection, $secondSection);
 
 // Con strpos trova le posizioni dei punti nel paragrafo
-$firstPoint = strpos($paragraph, '.');
-$secondPoint = strpos($paragraph, '.', $firstPoint + 1);
-$thirdPoint = strpos($paragraph, '.', $secondPoint + 1);
-$fourthPoint = strpos($paragraph, '.', $thirdPoint + 1);
-$fifthPoint = strpos($paragraph, '.', $fourthPoint + 1);
-$sixthPoint = strpos($paragraph, '.', $fifthPoint + 1);
-$seventhPoint = strpos($paragraph, '.', $sixthPoint + 1);
+// $firstPoint = strpos($paragraph, '.');
+// $secondPoint = strpos($paragraph, '.', $firstPoint + 1);
+// $thirdPoint = strpos($paragraph, '.', $secondPoint + 1);
+// $fourthPoint = strpos($paragraph, '.', $thirdPoint + 1);
+// $fifthPoint = strpos($paragraph, '.', $fourthPoint + 1);
+// $sixthPoint = strpos($paragraph, '.', $fifthPoint + 1);
+// $seventhPoint = strpos($paragraph, '.', $sixthPoint + 1);
 
-// Suddivide il paragrafo in base ai punti trovati
-$firstSection = substr($paragraph, 0, $firstPoint + 1);
-$secondSection = substr($paragraph, $firstPoint + 2, $secondPoint - $firstPoint - 1);
-$thirdSection = substr($paragraph, $secondPoint + 2, $thirdPoint - $secondPoint - 1);
-$fourthSection = substr($paragraph, $thirdPoint + 2, $fourthPoint - $thirdPoint - 1);
-$fifthSection = substr($paragraph, $fourthPoint + 2, $fifthPoint - $fourthPoint - 1);
-$sixthSection = substr($paragraph, $fifthPoint + 2, $sixthPoint - $fifthPoint - 1);
-$seventhSection = substr($paragraph, $sixthPoint + 2);
+// // Suddivide il paragrafo in base ai punti trovati
+// $firstSection = substr($paragraph, 0, $firstPoint + 1);
+// $secondSection = substr($paragraph, $firstPoint + 2, $secondPoint - $firstPoint - 1);
+// $thirdSection = substr($paragraph, $secondPoint + 2, $thirdPoint - $secondPoint - 1);
+// $fourthSection = substr($paragraph, $thirdPoint + 2, $fourthPoint - $thirdPoint - 1);
+// $fifthSection = substr($paragraph, $fourthPoint + 2, $fifthPoint - $fourthPoint - 1);
+// $sixthSection = substr($paragraph, $fifthPoint + 2, $sixthPoint - $fifthPoint - 1);
+// $seventhSection = substr($paragraph, $sixthPoint + 2);
 ?>
 
 <!DOCTYPE html>
